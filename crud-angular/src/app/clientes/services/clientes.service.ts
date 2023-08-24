@@ -9,7 +9,7 @@ import { Cliente } from '../model/cliente';
 })
 export class ClienteService {
 
-  private readonly API = '/assets/cliente.json';
+  private readonly API = '/assets/clientex.json';
 
   constructor(private httpClient: HttpClient) { }
 
