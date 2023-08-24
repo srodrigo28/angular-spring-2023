@@ -1,4 +1,6 @@
-# requisitos
+# Projeto Aqui pronta em Java Spring
+
+### requisitos
 
 * Configurar o java_home
 ```
@@ -9,6 +11,56 @@ C:\Program Files\Java\jdk-19\bin
 ```
 mvnw spring-boot:run
 ```
+
+### Angular
+* Instalando angular Global
+```
+npm i -g @angular/cli
+```
+
+* Criando projeto
+```
+ng new ponto-inteligente
+```
+
+* Rodar o projeto
+```
+ng serve --aot
+```
+
+### Angular
+* Cria modulo
+```
+ng g module autenticacao/login
+```
+
+* Cria modulo
+```
+ng g c autenticacao/login/components/login
+```
+
+* Cria class rota login
+```
+ng g class autenticacao/login/login-routing.module
+```
+
+* Cria Logar
+```
+ng g class autenticacao/login/components/logar.component
+```
+### Material Designer
+* instalar
+```
+ng add @angular/material
+```
+
+* Documentação
+```
+https://material.angular.io/
+```
+
+### Curso JavaScript
+* https://www.udemy.com/api-restful-avancada-spring-boot-java-8
 
 ### Importação no material versão angular 13
 * https://www.udemy.com/course/curso-de-angular-2-5-avancado/learn/lecture/18164794#overview
