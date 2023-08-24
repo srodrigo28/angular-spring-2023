@@ -21,10 +21,9 @@ ng g m courses --routing
 ```
 ng g c courses/courses
 ```
-
-### Criando Outro
+### Criando Serviços
 ```
-ng g m courses
+ng g s courses/services/courses
 ```
 
 * Mega importante compatilando modulos

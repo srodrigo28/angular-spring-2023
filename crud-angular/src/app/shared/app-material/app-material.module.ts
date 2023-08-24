@@ -7,7 +7,7 @@ import { MatCardModule} from '@angular/material/card';
   exports: [
     MatToolbarModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
   ]
 })
 
