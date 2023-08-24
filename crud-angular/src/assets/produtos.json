@@ -1,0 +1,5 @@
+[
+  { "codigo": "1", "nome": "motor portão dz 500", "quantidade": "20", "valor": "500" },
+  { "codigo": "2", "nome": "motor portão dz 700", "quantidade": "10", "valor": "700" },
+  { "codigo": "3", "nome": "motor portão dz 500", "quantidade": "5", "valor": "1000" }
+]
