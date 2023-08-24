@@ -11,3 +11,18 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 ```
 ng add @angular/material
 ```
+
+### Criando modulos
+```
+ng g m courses --routing
+```
+
+### Criando Components
+```
+ng g c courses/courses
+```
+
+### Criando Outro
+```
+ng g m courses
+```
