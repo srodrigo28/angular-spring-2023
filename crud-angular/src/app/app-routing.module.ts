@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   // passo 1
-  { path: '', pathMatch: 'full', redirectTo: 'courses' },
-  { path: 'courses',  loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule) },
+  // { path: '', pathMatch: 'full', redirectTo: 'courses' },
+  // { path: 'courses',  loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule) },
 
   // passo 2
-  // { path: '', pathMatch: 'full', redirectTo: 'produtos' },
-  // { path: 'produtos', loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule) }
+  { path: '', pathMatch: 'full', redirectTo: 'produtos' },
+  { path: 'produtos', loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule) }
 
   // passo 3
   // { path: '', pathMatch: 'full', redirectTo: 'clientes' },

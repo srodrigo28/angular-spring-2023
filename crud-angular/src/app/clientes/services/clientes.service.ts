@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { tap, first } from 'rxjs/operators'
+import { tap, first, delay } from 'rxjs/operators'
 
 import { Cliente } from '../model/cliente';
 
@@ -17,6 +17,7 @@ export class ClienteService {
     return this.httpClient.get<Cliente[]>(this.API)
       .pipe(
         //first(),
+        delay(1000),
         tap(clientes => console.log('Sucess'))
       );
   }

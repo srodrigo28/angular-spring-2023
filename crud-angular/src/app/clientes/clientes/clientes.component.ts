@@ -11,11 +11,11 @@ import { ClienteService } from '../services/clientes.service';
 })
 export class ClientesComponent implements OnInit {
 
-  clientes: Observable <Cliente[]>;
+  clientes$: Observable <Cliente[]>;
   displayedColumns = ['id', 'nome', 'cidade', 'telefone'];
 
   constructor( private clienteService: ClienteService) {
-    this.clientes = this.clienteService.list();
+    this.clientes$ = this.clienteService.list();
   }
 
   ngOnInit(): void {}

@@ -11,11 +11,11 @@ import { Produto } from '../model/produto';
 })
 export class ProdutosComponent implements OnInit {
 
-  produtos: Observable <Produto[]>;
+  produtos$: Observable <Produto[]>;
   displayedColumns = ['codigo', 'nome', 'quantidade', 'valor'];
 
   constructor( private produtosService: ProdutosService) {
-    this.produtos = this.produtosService.list();
+    this.produtos$ = this.produtosService.list();
   }
 
   ngOnInit(): void {}
