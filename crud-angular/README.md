@@ -26,3 +26,12 @@ ng g c courses/courses
 ```
 ng g m courses
 ```
+
+* Mega importante compatilando modulos
+```
+ng g m shared/app-material
+```
+* link como compartilhar modulo
+```
+https://www.youtube.com/watch?v=jjv5YZhPjfc&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVlTcY&index=7
+```
