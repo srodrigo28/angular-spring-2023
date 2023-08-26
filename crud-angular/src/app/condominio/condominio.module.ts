@@ -6,11 +6,15 @@ import { SharedModule } from '../shared/shared.module';
 import { CondominioRoutingModule } from './condominio-routing.module';
 import { CondominioComponent } from './condominio/condominio.component';
 import { CondominioFormComponent } from './condominio-form/condominio-form.component';
+import { MembroComponent } from './membro/membro.component';
+import { MembroFormComponent } from './membro/membro-form/membro-form.component';
 
 @NgModule({
   declarations: [
     CondominioComponent,
-    CondominioFormComponent
+    CondominioFormComponent,
+    MembroComponent,
+    MembroFormComponent
   ],
   imports: [
     CommonModule,

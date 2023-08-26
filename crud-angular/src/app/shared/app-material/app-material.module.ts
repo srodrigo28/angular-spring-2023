@@ -8,7 +8,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSelectModule } from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   exports: [
@@ -21,7 +23,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSelectModule,
+    MatSnackBarModule
   ]
 })
 

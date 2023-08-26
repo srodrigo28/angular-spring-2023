@@ -44,6 +44,15 @@ ng g c shared/components/error-dialog
 ng g s courses/services/courses
 ```
 
+### Criando membro
+```
+ng g c condominio/membro
+```
+
+```
+ng g c condominio/membro/membro-form
+```
+
 * Mega importante compatilando modulos
 ```
 ng g m shared/app-material

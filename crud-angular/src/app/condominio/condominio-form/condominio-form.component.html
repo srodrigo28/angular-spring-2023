@@ -2,7 +2,7 @@
   <mat-card-content class="max-width">
     <mat-card >
       <mat-toolbar color="primary" style="padding-left: 20px;">
-        <span>Cadastro Condominio</span>
+        <span (click)="onMembro()">Cadastro Condominio</span>
       </mat-toolbar>
     </mat-card>
     <mat-card>
@@ -13,25 +13,37 @@
           <input placeholder="CNPJ" formControlName="cnpj" class="input-small" />
 
           <select formControlName="cidade" class="input-small" formControlName="cidade">
-            <option>Goiânia</option>
-            <option>Aparecida</option>
+            <option value="null"></option>
+            <option value="Goiânia">Goiânia</option>
+            <option value="Aparecida">Aparecida</option>
           </select>
         </div>
 
         <div class="input-row">
 
-          <input type="date" placeholder="Data inicio contrato" class="input-small" formControlName="bairro" />
 
           <input placeholder="Bairro" class="input-small" formControlName="bairro" />
 
           <input placeholder="Endereço" formControlName="endereco" />
 
+          <input placeholder="Valor do Contrato" class="input-small" formControlName="valor_contrato" />
+
+          <input type="date" placeholder="Data inicio contrato" class="input-small" formControlName="data_inicio" />
+
         </div>
         <div class="input-row button-row">
-          <button class="btn btn-primary">Cadastrar</button>
+          <button class="btn btn-primary" (click)="onModal()">Cadastrar</button>
           <button class="btn btn-danger">Cancelar</button>
         </div>
       </form>
     </mat-card>
+
   </mat-card-content>
+
+
 </mat-card>
+
+<script>
+  // Get the modal
+
+  </script>
