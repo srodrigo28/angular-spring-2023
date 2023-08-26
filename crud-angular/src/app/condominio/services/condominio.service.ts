@@ -2,24 +2,23 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { tap, first, delay } from 'rxjs/operators'
 
-import { Produto } from '../model/produto';
+import { Condominio } from '../model/condominio';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProdutosService {
+export class CondominioService {
 
-  // private readonly API = '/assets/produtos.json';
-  private readonly API = 'api/produto';
+  private readonly API = 'api/condominio';
 
   constructor(private httpClient: HttpClient) { }
 
   list() {
-    return this.httpClient.get<Produto[]>(this.API)
+    return this.httpClient.get<Condominio[]>(this.API)
       .pipe(
         //first(),
         delay(1000),
-        tap(produtos => console.log('Sucess'))
+        tap(condominio => console.log('Sucess'))
       );
   }
 

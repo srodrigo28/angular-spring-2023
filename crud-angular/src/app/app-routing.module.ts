@@ -11,8 +11,12 @@ const routes: Routes = [
   // { path: 'produtos', loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule) }
 
   // passo 3 CLIENTES
-  { path: '', pathMatch: 'full', redirectTo: 'clientes' },
-  { path: 'clientes', loadChildren: () => import('./clientes/clientes.module').then(m => m.ClientesModule) }
+  // { path: '', pathMatch: 'full', redirectTo: 'clientes' },
+  // { path: 'clientes', loadChildren: () => import('./clientes/clientes.module').then(m => m.ClientesModule) }
+
+  // passo 4 CLIENTES
+  { path: '', pathMatch: 'full', redirectTo: 'condominio' },
+  { path: 'condominio', loadChildren: () => import('./condominio/condominio.module').then(m => m.CondominioModule) }
 ];
 
 @NgModule({

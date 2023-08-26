@@ -1,5 +1,15 @@
 # Curso Angular com Loiane
 
+* Ultimo visto:
+```
+https://www.youtube.com/watch?v=R3yy3RX4FyM&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVlTcY&index=19
+```
+
+* Comando rodar o projeto
+```
+npm run dev
+```
+
 * Link
 ```
 https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVlTcY

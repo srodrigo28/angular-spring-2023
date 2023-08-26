@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+}
+
+.loading-spinner{
+  padding: 40px;
+  height: 66vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0,0,0, 0.1);
+}
+
+.center{
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
