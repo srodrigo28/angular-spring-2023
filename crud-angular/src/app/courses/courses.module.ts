@@ -8,13 +8,13 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
 
 
 @NgModule({
-  declarations: [
-    CoursesComponent
-  ],
-  imports: [
-    CommonModule,
-    CoursesRoutingModule,
-    AppMaterialModule
-  ]
+    declarations: [
+        CoursesComponent
+    ],
+    imports: [
+        CommonModule,
+        CoursesRoutingModule,
+        AppMaterialModule,
+    ]
 })
 export class CoursesModule { }

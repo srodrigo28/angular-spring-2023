@@ -17,6 +17,7 @@ const routes: Routes = [
   // passo 4 CLIENTES
   { path: '', pathMatch: 'full', redirectTo: 'condominio' },
   { path: 'condominio', loadChildren: () => import('./condominio/condominio.module').then(m => m.CondominioModule) }
+
 ];
 
 @NgModule({

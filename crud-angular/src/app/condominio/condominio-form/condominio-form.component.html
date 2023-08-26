@@ -1,34 +1,37 @@
-<mat-card class="card-old">
-      <mat-toolbar class="card-title" color="primary"> Cadastro do Condomínio </mat-toolbar>
-      <mat-card-content class="card-old">
-          <form [formGroup]="form" (ngSubmit)="onSubmit()">
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="nome">
-            </mat-form-field>
-
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="cnpj">
-            </mat-form-field>
-
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="cidade">
-            </mat-form-field>
-
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="bairro">
-            </mat-form-field>
-
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="endereco">
-            </mat-form-field>
-
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="data_inicio">
-            </mat-form-field>
-
-            <mat-form-field >
-              <input matInput placeholder="Nome do condominio" formControlName="valor_contrato">
-            </mat-form-field>
-          </form>
-    </mat-card-content>
 <mat-card>
+  <mat-card-content class="max-width">
+    <mat-card >
+      <mat-toolbar color="primary" style="padding-left: 20px;">
+        <span>Cadastro Condominio</span>
+      </mat-toolbar>
+    </mat-card>
+    <mat-card>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="input-row">
+          <input placeholder="Nome do condominio" formControlName="nome" />
+
+          <input placeholder="CNPJ" formControlName="cnpj" class="input-small" />
+
+          <select formControlName="cidade" class="input-small" formControlName="cidade">
+            <option>Goiânia</option>
+            <option>Aparecida</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+
+          <input type="date" placeholder="Data inicio contrato" class="input-small" formControlName="bairro" />
+
+          <input placeholder="Bairro" class="input-small" formControlName="bairro" />
+
+          <input placeholder="Endereço" formControlName="endereco" />
+
+        </div>
+        <div class="input-row button-row">
+          <button class="btn btn-primary">Cadastrar</button>
+          <button class="btn btn-danger">Cancelar</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-card-content>
+</mat-card>

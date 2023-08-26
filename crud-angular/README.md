@@ -38,6 +38,7 @@ ng g m shared
 ng g c courses/courses
 ng g c shared/components/error-dialog
 ```
+
 ### Criando Serviços
 ```
 ng g s courses/services/courses
@@ -50,4 +51,11 @@ ng g m shared/app-material
 * link como compartilhar modulo
 ```
 https://www.youtube.com/watch?v=jjv5YZhPjfc&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVlTcY&index=7
+```
+
+### Links de referências
+
+* Material paleta de cores
+```
+https://paletadecores.com/
 ```

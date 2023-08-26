@@ -1,10 +1,14 @@
 <mat-card>
   <mat-card-content>
-  <mat-toolbar color="primary">
-    <span >Clientes Disponíveis</span>
-  </mat-toolbar>
 
-  <div *ngIf="clientes$ | async as clientes; else loading">
+    <mat-card-content>
+        <mat-toolbar color="primary">
+          <span >Clientes Disponíveis</span>
+        </mat-toolbar>
+    </mat-card-content>
+
+    <mat-card-content>
+    <div *ngIf="clientes$ | async as clientes; else loading">
     <table mat-table [dataSource]="clientes" class="mat-elevation-z8">
 
       <ng-container matColumnDef="id">
@@ -33,11 +37,13 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
   </div>
+</mat-card-content>
 
   <ng-template #loading>
     <div class="loading-spinner">
       <mat-spinner></mat-spinner>
     </div>
   </ng-template>
+
 </mat-card-content>
 <mat-card>
