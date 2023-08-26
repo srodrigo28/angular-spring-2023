@@ -2,7 +2,7 @@
   <mat-card-content class="max-width">
     <mat-card >
       <mat-toolbar color="primary" style="padding-left: 20px;">
-        <span (click)="onMembro()">Cadastro Condominio</span>
+        <span>Cadastro Condominio</span>
       </mat-toolbar>
     </mat-card>
     <mat-card>
@@ -32,8 +32,8 @@
 
         </div>
         <div class="input-row button-row">
-          <button class="btn btn-primary" (click)="onModal()">Cadastrar</button>
-          <button class="btn btn-danger">Cancelar</button>
+          <button class="btn btn-primary">Cadastrar</button>
+          <button class="btn btn-danger" (click)="onCancel()">Cancelar</button>
         </div>
       </form>
     </mat-card>
