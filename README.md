@@ -1,4 +1,4 @@
-# Projeto Aqui pronta em Java Spring
+# Projeto pronto em Java Spring
 
 ### requisitos
 
